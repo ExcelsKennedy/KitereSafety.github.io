@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://kit.fontawesome.com/4175a2b915.js" crossorigin="anonymous"></script>
+    <title>KitereSafety Blog - Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">KitereSafety</a>
+            <div class="nav-links" id="navLinks">
+                <div>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="blog.html">Home</a></li>
+                        <li><a href="blog-about.html">About</a></li>
+                </div>
+                <div class="links">
+                    <!-- {% if user.is_authenticated %} -->
+                    <!-- <li><a href="post_form.html">New Post</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+
+                    <div class="logout-btn">
+                        <form action="logout.html" method="post">
+                            <button type="submit">Logout</button>
+                        </form>
+                    </div> -->
+                    <!-- {% else %} -->
+                    <!-- <li><a href="blog-login.html">Login</a></li> -->
+                    <li><a href="register.html">Register</a></li>
+                    <!-- {% endif %} -->
+                    </ul>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-section-2">
+            <h1>Login</h1>
+
+            <form method="post">
+                <div class="label-input">
+                    <label>Username</label><br>
+                    <div class="input">
+                        <input type="text" placeholder="Your username">
+                    </div>
+                </div>
+
+                <div class="label-input">
+                    <label>Password</label><br>
+                    <div class="input">
+                        <input type="password" placeholder="Your Password">
+                    </div>
+                </div>
+
+                <button>Submit</button>
+            </form>
+            <small>Need an Account? <a href="register.html" style="color: blue; font-size: small;">Sign Up Now</a></small>
+        </div>>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-right">
+                <a href="index.html" class="logo">KitereSafety</a>
+
+            </div>
+            <div class="footer-left">
+                <div class="left-right">
+                    <a href="blog.html">Community</a>
+                    <a href="">Report</a>
+                    <a href="blog-about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="left-left">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy;KitereSafety 2024</p>
+    </footer>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | KitereSafety</title>
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4175a2b915.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">KitereSafety</a>
+        <div class="nav-links" id="navLinks">
+            <div>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="blog.html">Community</a></li>
+                    <li><a href="report-home.html">Report</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="careers.html">Careers</a></li></ul>
+            </div>
+            <div class="links">
+                <!-- {% if user.is_authenticated %} -->
+                <li><a href="notifications.html">Notifications</a></li>
+                <!-- <div class="logout-btn">
+                    <form action="{% url 'logout' %}" method="post">
+                        <button type="submit" class="logout-btn">Logout</button>
+                    </form>
+                </div> -->
+                <!-- {% else %} -->
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!-- {% endif %} -->
+                </ul>
+            </div>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="careers-header">
+        <h5>CAREERS</h5>
+        <h1>A safer world starts <br>with you.</h1>
+        <p>Make something that matters. KitereSafety <br>is defining mobile personal safety to make <br>Kitere community a 
+            safer place. Can your talents <br>and passion help push us forward?</p>
+        <a href="#">FIND THE RIGHT JOB FOR YOU</a>
+    </div>
+    
+    <div class="careers-header-flex">
+        <h1>A mission we believe in. <br><span>Powered by people who <br>believe in a better world.</span></h1>
+        <div>
+            <p>Having the right people on your team is crucial when you're <br>building something with a direct impact 
+            on people's lives.</p>
+            <p>Everything we do at KitereSafety, we do with the big picture <br>in mind. We take the time to make sure 
+                candidates fully <br>understand our mission from multiple perspectives. We <br>consider every new hire 
+                strategically and thoughtfully. If you <br>feel the same way about looking for job opportunities, we'd <br>love to 
+                talk.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-right">
+                <a href="index.html" class="logo">KitereSafety</a>
+
+            </div>
+            <div class="footer-left">
+                <div class="left-right">
+                    <a href="blog.html">Community</a>
+                    <a href="report-home.html">Report</a>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="left-left">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy;KitereSafety 2024</p>
+    </footer>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

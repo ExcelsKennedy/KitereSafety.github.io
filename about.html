@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About| KitereSafety</title>
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4175a2b915.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">KitereSafety</a>
+        <div class="nav-links" id="navLinks">
+            <div>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="blog.html">Community</a></li>
+                    <li><a href="report-home.html">Report</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <!-- {% if user.is_authenticated %} -->
+                <li><a href="notifications.html">Notifications</a></li>
+                <!-- <div class="logout-btn">
+                    <form action="{% url 'logout' %}" method="post">
+                        <button type="submit" class="logout-btn">Logout</button>
+                    </form>
+                </div> -->
+                <!-- {% else %} -->
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!-- {% endif %} -->
+                </ul>
+            </div>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="about-header">
+        <h5>ABOUT</h5>
+        <h1>Making your world a <br>safer place.</h1>
+        <p>At KitereSafety, we believe that stronger communities are <br>safer communities. We live in a world where people 
+            <br>can access information quickly, share effortlessly, and <br>connect easily--but we have yet to see the power of 
+            <br>bringing people together to watch out for each other. <br>At KitereSafety, we're developing cutting edge technology 
+            <br>so you can take care of the people and places you <br>love. 
+        </p>
+    </div>
+    
+    <div class="about-header-flex">
+        <div><h1>KitereSafety is on a mission to <br>make your community a safer <br>place.</h1></div>
+        <div>
+            <h3>We believe in public information for the good of the public.</h3>
+            <p>In being able to act on safety alerts in real time. In transparency <br>that bonds and that empowers everyone 
+                in a community, from <br>city council to residents.</p>
+            <p>We believe in giving people a way to use their phones to protect a <br>neighbor, to prevent a tragedy, and to 
+                count on one another.</p>
+            <p>And to create a safer world for each other, with each other.</p>
+        </div>
+    </div>
+    
+    
+    <div class="about-near-footer"> 
+        <div><a href="index.html" class="logo">KitereSafety</a></div>
+        <!-- family background  -->
+        <h1>Build the future of public <br>safety together.</h1>
+    </div>
+    
+    <hr class="hr">
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-right">
+                <a href="index.html" class="logo">KitereSafety</a>
+
+            </div>
+            <div class="footer-left">
+                <div class="left-right">
+                    <a href="blog.html">Community</a>
+                    <a href="report-home.html">Report</a>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="left-left">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy;KitereSafety 2024</p>
+    </footer>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

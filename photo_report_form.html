@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Report | KitereSafety</title>
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4175a2b915.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">KitereSafety</a>
+        <div class="nav-links" id="navLinks">
+            <div>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="report-home.html">Report</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="careers.html">Careers</a></li></ul>
+            </div>
+            <div class="links">
+                <!-- {% if user.is_authenticated %} -->
+                <div class="logout-btn">
+                    <form action="{% url 'logout' %}" method="post">
+                        <button type="submit" class="logout-btn">Logout</button>
+                    </form>
+                </div>
+                <!-- {% else %} -->
+                <!-- <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li> -->
+                <!-- {% endif %} -->
+                </ul>
+            </div>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="background">
+        <h1>Safety through your camera</h1>
+        <p>Take a photo and send it to us. Tell us more about this photo so that we can help you.</p>
+    </div>
+    
+    <div class="photo-report">
+        <h1 class="photo-header">Photo report</h1>
+        <form method="post" enctype="multipart/form-data" class="photo-form">
+            <div class="input">
+                <label>Title:</label><br>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label>Location:</label><br>
+                <input type="text">
+            </div>
+            <div class="input">
+                <label>Photo:</label><br>
+                <input type="file">
+            </div>
+            <div>
+                <label>Description:</label><br>
+                <textarea></textarea>
+            </div>
+    
+            <button type="submit" class="input-desc">Post</button>
+        </form>
+    </div>
+    
+    <div class="incident">
+        <div class="incident-flex">
+            <a href="report-home.html" class="hero-btn">Go to Report Page</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-right">
+                <a href="index.html" class="logo">KitereSafety</a>
+
+            </div>
+            <div class="footer-left">
+                <div class="left-right">
+                    <a href="blog.html">Community</a>
+                    <a href="report-home.html">Report</a>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="left-left">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy;KitereSafety 2024</p>
+    </footer>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

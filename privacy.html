@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy | KitereSafety</title>
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4175a2b915.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">KitereSafety</a>
+        <div class="nav-links" id="navLinks">
+            <div>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="blog.html">Community</a></li>
+                    <li><a href="report-home.html">Report</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="careers.html">Careers</a></li></ul>
+            </div>
+            <div class="links">
+                <!-- {% if user.is_authenticated %} -->
+                <li><a href="notifications.html">Notifications</a></li>
+                <!-- <div class="logout-btn">
+                    <form action="{% url 'logout' %}" method="post">
+                        <button type="submit" class="logout-btn">Logout</button>
+                    </form>
+                </div> -->
+                <!-- {% else %} -->
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!-- {% endif %} -->
+                </ul>
+            </div>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="privacy-body">
+        <div class="privacy-header">
+            <h1>Privacy at KitereSafety</h1>
+            <p>KitereSafety's mission is to make your community a safer place. The same principle applies to your <br>data. 
+                Our service depends on you sharing your location with us. By entrusting us with this <br>information, we will 
+                not share, sell or otherwise use your data other than in the service of <br>our mission.</p>
+        </div>
+        
+        <div class="privacy-header">
+            <h1>Protecting you means <br>protecting your data</h1>
+            <p>Our infrastructure was designed to securely store your data. In addition to being <br>regularly tested and 
+                verified, we store as little personal data as needed for the shortest <br>duration possible.</p>
+            <p>KitereSafety limits access to your data to a small subset of the KitereSafety engineering team. We <br>have specific 
+                systems to control data access, and all access is logged and regularly <br>audited. We perform a privacy 
+                review for all new features.</p>
+        </div>
+        
+        <div class="privacy-header">
+            <h1>Your location only for your safety</h1>
+            <p>KitereSafety uses your location data to route real-time safety alerts to you, like a fire in your <br>building, 
+                an abducted child or a dangerous situation near you.</p>
+            <p>We do not sell your data to third-party service providers or government agencies. We are <br>an independent 
+                private company and do not serve ads.</p>
+        </div>
+    </div>
+    
+    
+    <div class="near-footer">
+        <h1>Protect your community.</h1>
+    </div>
+    
+    <hr class="hr">
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-right">
+                <a href="index.html" class="logo">KitereSafety</a>
+
+            </div>
+            <div class="footer-left">
+                <div class="left-right">
+                    <a href="blog.html">Community</a>
+                    <a href="report-home.html">Report</a>
+                    <a href="about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="left-left">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy;KitereSafety 2024</p>
+    </footer>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

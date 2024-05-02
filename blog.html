@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://kit.fontawesome.com/4175a2b915.js" crossorigin="anonymous"></script>
+    <title>KitereSafety Blog</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">KitereSafety</a>
+            <div class="nav-links" id="navLinks">
+                <div>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="blog.html">Home</a></li>
+                        <li><a href="blog-about.html">About</a></li>
+                </div>
+                <div class="links">
+                    <!-- {% if user.is_authenticated %} -->
+                    <li><a href="post_form.html">New Post</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+
+                    <!-- <div class="logout-btn">
+                        <form action="logout.html" method="post">
+                            <button type="submit">Logout</button>
+                        </form>
+                    </div> -->
+                    <!-- {% else %} -->
+                    <li><a href="blog-login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <!-- {% endif %} -->
+                    </ul>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="content-section-3">
+            <img src="images/default.jpg" class="article-img">
+            <div>
+                <div class="article-metadata">
+                    <a href="">Kevin</a>
+                    <!-- Use the converted date_posted field -->
+                    <small>01/05/2024, 8:34 PM</small>
+                </div>
+                <h2><a class="article-title" href="post_detail.html">Burglary at the southern street</a></h2>
+                <p class="article-content">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur sed eligendi, recusandae molestias
+                    quia suscipit nulla. Accusantium modi, aliquid tempore hic quod
+                    nulla necessitatibus repudiandae quidem neque atque tempora velit!</p>
+            </div>
+        </article>
+        <article class="content-section-3">
+            <img src="images/host.png" class="article-img">
+            <div>
+                <div class="article-metadata">
+                    <a href="">Gabriel</a>
+                    <!-- Use the converted date_posted field -->
+                    <small>01/05/2024, 8:33 PM</small>
+                </div>
+                <h2><a class="article-title" href="">Missing person</a></h2>
+                <p class="article-content">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur sed eligendi, recusandae molestias
+                    quia suscipit nulla. Accusantium modi, aliquid tempore hic quod
+                    nulla necessitatibus repudiandae quidem neque atque tempora velit!</p>
+            </div>
+        </article>
+        <article class="content-section-3">
+            <img src="images/default.jpg" class="article-img">
+            <div>
+                <div class="article-metadata">
+                    <a href="">Gwen.1</a>
+                    <!-- Use the converted date_posted field -->
+                    <small>01/05/2024, 8:32 PM</small>
+                </div>
+                <h2><a class="article-title" href="">Lost Dog</a></h2>
+                <p class="article-content">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur sed eligendi, recusandae molestias
+                    quia suscipit nulla. Accusantium modi, aliquid tempore hic quod
+                    nulla necessitatibus repudiandae quidem neque atque tempora velit!</p>
+            </div>
+        </article>
+        <article class="content-section-3">
+            <img src="images/default.jpg" class="article-img">
+            <div>
+                <div class="article-metadata">
+                    <a href="">New User 1</a>
+                    <!-- Use the converted date_posted field -->
+                    <small>01/05/2024, 8:30 PM</small>
+                </div>
+                <h2><a class="article-title" href="">Burglary at the southern street</a></h2>
+                <p class="article-content">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur sed eligendi, recusandae molestias
+                    quia suscipit nulla. Accusantium modi, aliquid tempore hic quod
+                    nulla necessitatibus repudiandae quidem neque atque tempora velit!</p>
+            </div>
+        </article>
+        <article class="content-section-3">
+            <img src="images/host.png" class="article-img">
+            <div>
+                <div class="article-metadata">
+                    <a href="">Test User</a>
+                    <!-- Use the converted date_posted field -->
+                    <small>01/05/2024, 8:28 PM</small>
+                </div>
+                <h2><a class="article-title" href="">Fire alert</a></h2>
+                <p class="article-content">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur sed eligendi, recusandae molestias
+                    quia suscipit nulla. Accusantium modi, aliquid tempore hic quod
+                    nulla necessitatibus repudiandae quidem neque atque tempora velit!</p>
+            </div>
+        </article>
+        <article class="content-section-3">
+            <img src="images/Disney_100.jpeg" class="article-img">
+            <div>
+                <div class="article-metadata">
+                    <a href="">New User</a>
+                    <!-- Use the converted date_posted field -->
+                    <small>01/05/2024, 8:14 PM</small>
+                </div>
+                <h2><a class="article-title" href="">Emergency</a></h2>
+                <p class="article-content">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Consequatur sed eligendi, recusandae molestias
+                    quia suscipit nulla. Accusantium modi, aliquid tempore hic quod
+                    nulla necessitatibus repudiandae quidem neque atque tempora velit!</p>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-right">
+                <a href="index.html" class="logo">KitereSafety</a>
+
+            </div>
+            <div class="footer-left">
+                <div class="left-right">
+                    <a href="blog.html">Community</a>
+                    <a href="">Report</a>
+                    <a href="blog-about.html">About</a>
+                    <a href="careers.html">Careers</a>
+                </div>
+                <div class="left-left">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-links">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>&copy;KitereSafety 2024</p>
+    </footer>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
