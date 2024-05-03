@@ -255,7 +255,7 @@ nav div {
 }
 
 .explanation {
-    background: linear-gradient(rgba(0, 0, 0, 0), #19184d63), center/cover url('/images/background-city.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0), #19184d63), center/cover url('images/background-city.jpg');
     color: white;
     margin-top: 40px;
     padding-top: 40px;
